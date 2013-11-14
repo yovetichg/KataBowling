@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace KataBowling
+﻿namespace KataBowling
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static string Rolls;
+        public static void Main(string[] args)
         {
+            if (args == null)
+            {
+                throw new InvalidArgumentsException("NULL");
+            }
+            Rolls = args[0];
         }
     }
 }
